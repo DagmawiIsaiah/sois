@@ -13,19 +13,35 @@ dependencies:
     sdk: flutter
     
   cupertino_icons: ^1.0.8
+  fluentui_system_icons: ^1.1.271
+  flutter_native_splash: ^2.4.4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
     
   flutter_lints: ^5.0.0
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/splash.png
+  color_dark: "#121212"
+  image_dark: assets/images/splash_dark.png
+
+  android_12:
+    image: assets/images/splash.png
+    icon_background_color: "#ffffff"
+    image_dark: assets/images/splash_dark.png
+    icon_background_color_dark: "#121212"
+
+  web: false
   
 flutter:
 
   uses-material-design: true
   
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/images/
   
   #   - family: Schyler
   #     fonts:
