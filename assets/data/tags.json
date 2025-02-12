@@ -1,0 +1,25 @@
+{
+    "tags": [
+        {
+            "label": "Work",
+            "strickPerWeek": 3,
+            "color": "#000000",
+            "emojiPath": "assets/images/excited.png",
+            "strickIndex": 0
+        },
+        {
+            "label": "Fitness",
+            "strickPerWeek": 2,
+            "color": "#000000",
+            "emojiPath": "assets/images/excited.png",
+            "strickIndex": 1
+        },
+        {
+            "label": "Learning",
+            "strickPerWeek": 2,
+            "color": "#000000",
+            "emojiPath": "assets/images/excited.png",
+            "strickIndex": 2
+        }
+    ]
+}
