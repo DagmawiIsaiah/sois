@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:sois/screens/backup_screen.dart';
-import '../screens/screens.dart';
+import 'package:provider/provider.dart';
+
+import '../router/router.dart';
 import '../utils/utils.dart';
+import '../providers/app_state_providers.dart';
 
 void main() {
-  runApp(const SOIS());
+  ChangeNotifierProvider(
+    create: (context) => AppStateProviders(),
+    child: SOIS(),
+  );
 }
 
 class SOIS extends StatelessWidget {
@@ -12,20 +17,11 @@ class SOIS extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'SOIS',
       theme: AppTheme.lightTheme,
-      initialRoute: HomeScreen.routeName,
-      routes: {
-        HomeScreen.routeName: (context) => const HomeScreen(),
-        CalendarScreen.routeName: (context) => const CalendarScreen(),
-        ReminderScreen.routeName: (context) => const ReminderScreen(),
-        BackupScreen.routeName: (context) => const BackupScreen(),
-        AddTaskScreen.routeName: (context) => const AddTaskScreen(),
-        AddReminderScreen.routeName: (context) => const AddReminderScreen(),
-        AddTagScreen.routeName: (context) => const AddTagScreen(),
-      },
+      routerConfig: router,
     );
   }
 }
