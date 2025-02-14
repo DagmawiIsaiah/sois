@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 
 import '../utils/utils.dart';
 import '../widgets/widgets.dart';
@@ -11,7 +10,6 @@ enum CalendarView {
 }
 
 class CalendarScreen extends StatefulWidget {
-  static const routeName = '/calendar';
   const CalendarScreen({super.key});
 
   @override

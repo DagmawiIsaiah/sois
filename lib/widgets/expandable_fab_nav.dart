@@ -1,8 +1,9 @@
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
-import '../screens/screens.dart';
 import '../utils/utils.dart';
+import '../router/router.dart';
 
 class ExpandableFAB extends StatefulWidget {
   const ExpandableFAB({super.key});
@@ -62,9 +63,8 @@ class _ExpandableFABState extends State<ExpandableFAB>
           FloatingActionButton(
             backgroundColor: AppTheme.neutral900,
             onPressed: () {
-              
               _toggleExpansion;
-              Navigator.pushNamed(context, AddTaskScreen.routeName);
+              context.go(Paths.addTask);
             },
             child: Icon(FluentIcons.target_arrow_24_regular),
           ),
@@ -72,7 +72,7 @@ class _ExpandableFABState extends State<ExpandableFAB>
           FloatingActionButton(
             backgroundColor: AppTheme.neutral900,
             onPressed: () {
-              Navigator.pushNamed(context, AddReminderScreen.routeName);
+              context.go(Paths.addReminder);
               _toggleExpansion;
             },
             child: Icon(FluentIcons.note_24_regular),
@@ -81,7 +81,7 @@ class _ExpandableFABState extends State<ExpandableFAB>
           FloatingActionButton(
             backgroundColor: AppTheme.neutral900,
             onPressed: () {
-              Navigator.pushNamed(context, AddTagScreen.routeName);
+              context.go(Paths.addTag);
               _toggleExpansion;
             },
             child: Icon(FluentIcons.tag_24_regular),

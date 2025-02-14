@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
+import 'package:go_router/go_router.dart';
 
+import '../router/router.dart';
 import '../utils/utils.dart';
 
 class CustomNavigation extends StatelessWidget {
@@ -22,7 +24,7 @@ class CustomNavigation extends StatelessWidget {
         Spacer(),
         IconButton(
           onPressed: () {
-            Navigator.of(context).pushNamed("/");
+            context.go(Paths.home);
           },
           icon: Icon(
             (currentScreenIndex == 0)
@@ -35,7 +37,7 @@ class CustomNavigation extends StatelessWidget {
         ),
         IconButton(
           onPressed: () {
-            Navigator.of(context).pushNamed("/calendar");
+            context.go(Paths.calendar);
           },
           icon: Icon(
             (currentScreenIndex == 1)
@@ -48,7 +50,7 @@ class CustomNavigation extends StatelessWidget {
         ),
         IconButton(
           onPressed: () {
-            Navigator.of(context).pushNamed("/reminder");
+            context.go(Paths.reminder);
           },
           icon: Icon(
             (currentScreenIndex == 2)
@@ -61,7 +63,7 @@ class CustomNavigation extends StatelessWidget {
         ),
         IconButton(
           onPressed: () {
-            Navigator.of(context).pushNamed("/backup");
+            context.go(Paths.backup);
           },
           icon: Icon(
             (currentScreenIndex == 3)

@@ -5,7 +5,6 @@ import 'package:sois/utils/utils.dart';
 import '../widgets/widgets.dart';
 
 class BackupScreen extends StatelessWidget {
-  static const routeName = '/backup';
   const BackupScreen({super.key});
 
   @override

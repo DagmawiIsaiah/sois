@@ -5,8 +5,6 @@ import '../utils/utils.dart';
 import '../widgets/widgets.dart';
 
 class AddTagScreen extends StatefulWidget {
-  static const routeName = '/add-tag';
-
   const AddTagScreen({super.key});
 
   @override

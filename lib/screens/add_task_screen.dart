@@ -5,7 +5,6 @@ import 'package:sois/widgets/widgets.dart';
 import '../utils/utils.dart';
 
 class AddTaskScreen extends StatelessWidget {
-  static const routeName = '/add-task';
   const AddTaskScreen({super.key});
 
   @override

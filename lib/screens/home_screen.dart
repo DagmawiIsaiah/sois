@@ -6,7 +6,6 @@ import '../utils/utils.dart';
 import '../widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
-  static const routeName = '/';
   const HomeScreen({super.key});
 
   @override

@@ -5,7 +5,6 @@ import 'package:sois/widgets/widgets.dart';
 import '../utils/utils.dart';
 
 class AddReminderScreen extends StatelessWidget {
-  static const routeName = '/add-reminder';
   const AddReminderScreen({super.key});
 
   @override
