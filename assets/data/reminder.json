@@ -1,11 +1,13 @@
 {
     "reminders": [
         {
-            "label": "Reminder 1",
+            "note": "Reminder 1",
+            "isSeen": false,
             "dateTime": "2025-01-01 12:00:00"
         },
         {
-            "label": "Reminder 2",
+            "note": "Reminder 2",
+            "isSeen": false,
             "dateTime": "2025-02-01 12:00:00"
         }
     ]

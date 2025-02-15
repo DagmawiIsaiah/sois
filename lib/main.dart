@@ -6,10 +6,7 @@ import '../utils/utils.dart';
 import '../providers/app_state_providers.dart';
 
 void main() {
-  ChangeNotifierProvider(
-    create: (context) => AppStateProviders(),
-    child: SOIS(),
-  );
+  runApp(const SOIS());
 }
 
 class SOIS extends StatelessWidget {
@@ -17,11 +14,14 @@ class SOIS extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      debugShowCheckedModeBanner: false,
-      title: 'SOIS',
-      theme: AppTheme.lightTheme,
-      routerConfig: router,
+    return ChangeNotifierProvider(
+      create: (context) => AppStateProviders(),
+      child: MaterialApp.router(
+        debugShowCheckedModeBanner: false,
+        title: 'SOIS',
+        theme: AppTheme.lightTheme,
+        routerConfig: router,
+      ),
     );
   }
 }

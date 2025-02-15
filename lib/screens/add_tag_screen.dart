@@ -1,5 +1,6 @@
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../utils/utils.dart';
 import '../widgets/widgets.dart';
@@ -28,7 +29,7 @@ class _AddTagScreenState extends State<AddTagScreen> {
                   children: [
                     IconButton(
                       onPressed: () {
-                        Navigator.pop(context);
+                        context.pop();
                       },
                       icon: Icon(FluentIcons.arrow_left_24_filled),
                     ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
+import 'package:provider/provider.dart';
 
+import '../providers/app_state_providers.dart';
 import '../utils/utils.dart';
 
 class Announcement extends StatelessWidget {
@@ -90,12 +92,19 @@ class Announcement extends StatelessWidget {
                   children: [
                     Image.asset(emojiPath!),
                     Spacer(),
-                    GestureDetector(
-                      onTap: () {},
-                      child: Icon(
-                        FluentIcons.dismiss_20_filled,
-                        color: AppTheme.neutral900,
-                      ),
+                    Consumer<AppStateProviders>(
+                      builder: (BuildContext context, appStateProvider,
+                          Widget? child) {
+                        return GestureDetector(
+                          onTap: () {
+                            appStateProvider.dismissWelcomeCard();
+                          },
+                          child: Icon(
+                            FluentIcons.dismiss_20_filled,
+                            color: AppTheme.neutral900,
+                          ),
+                        );
+                      },
                     ),
                   ],
                 ),
