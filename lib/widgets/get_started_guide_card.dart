@@ -74,10 +74,6 @@ class GetStartedGuideCard extends StatelessWidget {
               builder: (BuildContext context, appStateProvider, Widget? child) {
                 return ElevatedButton(
                   onPressed: () {
-                    if (index == 1) {
-                      context.go(Paths.addTag);
-                      appStateProvider.dismissCreateTag();
-                    }
                     if (index == 2) {
                       context.go(Paths.addTask);
                       appStateProvider.dismissCreateTask();

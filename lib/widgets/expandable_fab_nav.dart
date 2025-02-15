@@ -79,15 +79,6 @@ class _ExpandableFABState extends State<ExpandableFAB>
             child: Icon(FluentIcons.note_24_regular),
           ),
           SizedBox(height: 10),
-          FloatingActionButton(
-            backgroundColor: AppTheme.neutral900,
-            onPressed: () {
-              context.push(Paths.addTag);
-              _toggleExpansion;
-            },
-            child: Icon(FluentIcons.tag_24_regular),
-          ),
-          SizedBox(height: 10),
         ],
         // Main FAB with rotation animation
         FloatingActionButton(
