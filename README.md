@@ -1,16 +1,45 @@
-# sois
+# **SOIS – Your Smart Reminder & Task Tracker** 📅✅  
 
-A new Flutter project.
+**SOIS** is a sleek and intuitive **Flutter** app designed to keep you organized, productive, and on track. Whether it's daily tasks, project deadlines, or important reminders, TaskEase ensures you never miss a beat!  
 
-## Getting Started
+![TaskEase Screenshot](sois.png)
 
-This project is a starting point for a Flutter application.
+## 🚀 **Features**  
 
-A few resources to get you started if this is your first Flutter project:
+✅ **Smart Task Management** – Create, organize, and prioritize tasks effortlessly.  
+✅ **Custom Reminders & Notifications** – Set reminders with flexible scheduling.  
+✅ **Recurring Tasks** – Automate daily, weekly, or custom repeat schedules.  
+✅ **Beautiful UI & Dark Mode** – A modern, user-friendly interface with dark mode support.  
+✅ **Progress Tracking** – Mark tasks as completed and monitor productivity trends.  
+✅ **Cloud Sync & Backup** – Keep your tasks safe and accessible across devices.  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🎯 **Use Cases**  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Students** – Keep track of assignments, deadlines, and study plans.  
+- **Professionals** – Manage work tasks, meetings, and personal goals.  
+- **Freelancers** – Organize client work and daily routines.  
+- **Anyone** – Stay productive and never forget important tasks!  
+
+## 🛠 **Installation & Setup**  
+
+### **Requirements**  
+- Flutter SDK  
+- Dart  
+
+### **Installation**  
+
+```bash
+git clone https://github.com/DagmawiIsaiah/sois.git
+cd sois
+flutter pub get
+```
+
+### **Run the App**  
+
+```bash
+flutter run
+```
+
+---
+
+Project under development.
