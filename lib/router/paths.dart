@@ -9,5 +9,4 @@ class Paths {
   // Add screens
   static const String addTask = '/addTask';
   static const String addReminder = '/addReminder';
-  static const String addTag = '/addTag';
 }

@@ -64,7 +64,8 @@ class _ExpandableFABState extends State<ExpandableFAB>
             backgroundColor: AppTheme.neutral900,
             onPressed: () {
               _toggleExpansion;
-              context.go(Paths.addTask);
+              context.push(Paths.addTask);
+              
             },
             child: Icon(FluentIcons.target_arrow_24_regular),
           ),
@@ -72,19 +73,10 @@ class _ExpandableFABState extends State<ExpandableFAB>
           FloatingActionButton(
             backgroundColor: AppTheme.neutral900,
             onPressed: () {
-              context.go(Paths.addReminder);
+              context.push(Paths.addReminder);
               _toggleExpansion;
             },
             child: Icon(FluentIcons.note_24_regular),
-          ),
-          SizedBox(height: 10),
-          FloatingActionButton(
-            backgroundColor: AppTheme.neutral900,
-            onPressed: () {
-              context.go(Paths.addTag);
-              _toggleExpansion;
-            },
-            child: Icon(FluentIcons.tag_24_regular),
           ),
           SizedBox(height: 10),
         ],

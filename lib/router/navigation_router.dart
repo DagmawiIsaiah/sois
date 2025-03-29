@@ -31,9 +31,5 @@ final router = GoRouter(
       path: Paths.addReminder,
       builder: (context, state) => AddReminderScreen(),
     ),
-    GoRoute(
-      path: Paths.addTag,
-      builder: (context, state) => AddTagScreen(),
-    ),
   ],
 );
